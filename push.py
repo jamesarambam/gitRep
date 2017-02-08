@@ -51,11 +51,18 @@ def main():
     version = "v"+version
     try:
         msg = sys.argv[1]
+        # print "cd "+ppath +" && "+msg
+        os.system("cd "+ppath +" && "+"git add .")
+        os.system("cd "+ppath +" && "+'git commit -m "'+version+' - '+msg+'"')
+        os.system("cd "+ppath +" && "+'git push')
+
     except:
         msg = ""
-    os.system("git add .")
-    os.system('git commit -m '+version+' - '+msg)
-    os.system('git push')
+        os.system("cd "+ppath)
+
+    # os.system("cd "+ppath +" && "+"git add .")
+    # os.system("cd "+ppath +" && "+'git commit -m '+version+' - '+msg)
+    # os.system("cd "+ppath +" && "+'git push')
 
 
 # =============================================================================== #
