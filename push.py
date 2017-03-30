@@ -1,10 +1,21 @@
+#!/usr/bin/python
 """
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Author : James Arambam
 Date   : 08 Feb 2017
 Description :
-Input : 
-Output : 
+Input :
+Output :
+
+
+How to use :
+
+$python push.py "message"
+
+or
+
+$python push.py
+
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 """
@@ -13,25 +24,10 @@ Output :
 
 import sys
 import os
-import platform
-from pprint import pprint
 import time
 
-# ================================ secImports ================================ #
 
-o = platform.system()
-if o == "Linux":
-    d = platform.dist()
-    if d[0] == "debian":
-        sys.path.append("/media/james/Storage/PyCharmProjects/auxLib")
-    if d[0] == "centos":
-        sys.path.append("/home/ajsingh/PycharmProjects/auxLib")
-if o == "Darwin":
-    sys.path.append("/Users/james/PycharmProjects/auxLib")
-
-import auxLib as ax
-
-print "# ============================ START ============================ #"
+print "# ============================ STARTING GIT PUSH ============================ #"
 
 # ============================================================================ #
 
@@ -64,5 +60,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-    print "# ============================  END  ============================ #"
+    print "# ============================  GIT PUSH FINISHED  ============================ #"
 
