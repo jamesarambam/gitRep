@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Author : James Arambam
@@ -39,16 +40,6 @@ from pprint import pprint
 # ================================ secImports ================================ #
 
 o = platform.system()
-if o == "Linux":
-    d = platform.dist()
-    if d[0] == "debian":
-        sys.path.append("/media/james/Storage/PyCharmProjects/auxLib")
-    if d[0] == "centos":
-        sys.path.append("/home/ajsingh/PycharmProjects/auxLib")
-if o == "Darwin":
-    sys.path.append("/Users/james/PycharmProjects/auxLib")
-
-import auxLib as ax
 
 print "# ============================ START ============================ #"
 
