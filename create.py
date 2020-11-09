@@ -4,14 +4,16 @@
 Author : James Arambam
 Date   : 03 Feb 2017
 Description :
+
+
 Input :
 There are two input arguments
     i. First Argument will be the path to the local project directory :
             e.g  '/Users/james/workspace/test3'  here test3 is my project folder
     ii. Second Argument will be the url to git repository :
+            Note : First create the repository in the remote site
             e.g 'https://jamesarambam@bitbucket.org/jamesarambam/test3.git'
-
-            Note : This can work for any git repository either for GitHub or BitBucket
+            
 
 Output :
 
